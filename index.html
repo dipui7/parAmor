@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="WIP Amor purple.png" type="Amor/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 class="header_text">Would you like to watch movie with me on 14th? &hearts;</h1>
+        <h2>Please we can even have Pusheen with us 	&#129402; 	&#129402;</h2>
+        <h2> I am pretty sure, Pusheen would like to meet me as well :3 </h2>
+      </div>
+      <p>
+        <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MDExZXVmNWZhNTRjNjk1YW5naTJtc3A2YjIgM2l1cGlkQG0&tmsrc=3iupid%40gmail.com">Click here to fix a time and share</a>
+      </p>
+       <p>
+        <a href="https://www.facebook.com/afnan0155dipu" >Click here to send your Exclusive Photos of your pretty face</a>
+      </p>
+      <div class="gif_container">
+        <img
+          src="https://i.postimg.cc/8CPp3fkq/cat-kitty.gif"
+          alt="Cute animated illustration"
+        />
+      </div>
+      
+      <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes</button>
+        <button
+          class="btn"
+          id="noButton"
+          onmouseover="moveButton()"
+          onclick="moveButton()"
+        >
+          No
+        </button>
+
+        <script>
+          function nextPage() {
+            window.location.href = "Yes.html";
+          }
+
+          function moveButton() {
+            var x =
+              Math.random() *
+              (window.innerWidth -
+                document.getElementById("noButton").offsetWidth);
+            var y =
+              Math.random() *
+              (window.innerHeight -
+                document.getElementById("noButton").offsetHeight);
+            document.getElementById("noButton").style.left = `${x}px`;
+            document.getElementById("noButton").style.top = `${y}px`;
+          }
+        </script>
+      </div>
+    </div>
+  </body>
+</html>
